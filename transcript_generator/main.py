@@ -179,7 +179,7 @@ def generate_transcripts(lor,reader_1,reader_2,reader_3):
             }]).set_properties(subset=['Subject Name'], **{'width': '300px'})
     
             
-            path_to_table=r"C:\Users\Dell\Desktop\1901CE15_2021\proj2\storing_tables"
+            path_to_table=r"transcript_generator\storing_tables"
             new_path=os.path.join(path_to_table,"table_"+str(i)+".png")
             
             

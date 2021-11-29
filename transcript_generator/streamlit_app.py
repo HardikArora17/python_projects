@@ -70,8 +70,8 @@ if(len(user_input)>1):
 
 flag_get=0
 if st.button('Generate Transcripts'):
-    shutil.rmtree('transcriptsIITP_12/')
-    os.mkdir('transcriptsIITP_12/')
+    #shutil.rmtree('transcriptsIITP_12/')
+    #os.mkdir('transcriptsIITP_12/')
     generate_transcripts(roll_list,reader_1,reader_2,reader_3)
     
     zipObj = ZipFile('storing_tables/transcripts.zip', 'w')
