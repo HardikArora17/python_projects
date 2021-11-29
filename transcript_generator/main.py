@@ -183,7 +183,7 @@ def generate_transcripts(lor,reader_1,reader_2,reader_3):
             new_path=os.path.join(path_to_table,"table_"+str(i)+".png")
             
             
-            dfi.export(df,new_path)
+            dfi.export(df,new_path,table_conversion='chrome')
             
             if(flag==1):
                 if(i<4):
