@@ -67,7 +67,8 @@ if(len(user_input)>1):
             roll_list.append(initial+str(i))
         
     st.write("Range entered succesfully")
-    
+
+flag_get=0
 if st.button('Generate Transcripts'):
     shutil.rmtree('transcriptsIITP_12/')
     os.mkdir('transcriptsIITP_12/')
@@ -78,13 +79,15 @@ if st.button('Generate Transcripts'):
     
     for k in os.listdir(path):
         zipObj.write(path+k)
-        
+    flag_get=1
     zipObj.close()
     
 # if(st.button('Download')):
 #     st.write("Downloading......")
-with open('storing_tables/transcripts.zip', 'rb') as f:
-    st.download_button('Download Zip', f, file_name='transcripts.zip')
+
+if(flag_get==1):
+    with open('storing_tables/transcripts.zip', 'rb') as f:
+        st.download_button('Download Zip', f, file_name='transcripts.zip')
             
     
         
