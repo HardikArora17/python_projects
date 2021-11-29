@@ -1,9 +1,9 @@
 from fpdf import FPDF
 
-path_to_logo=r'C:\Users\Dell\Desktop\1901CE15_2021\proj2\download.png'
-path_to_text=r'C:\Users\Dell\Desktop\1901CE15_2021\proj2\19-iitpatna.jpg'
-path_to_stamp=r"C:\Users\Dell\Desktop\1901CE15_2021\proj2\stamp.png"
-path_to_sign=r"C:\Users\Dell\Desktop\1901CE15_2021\proj2\sign.png"
+path_to_logo=r'download.png'
+path_to_text=r'19-iitpatna.jpg'
+path_to_stamp=r"stamp.png"
+path_to_sign=r"sign.png"
 
 class PDF_MINER(FPDF):
     
