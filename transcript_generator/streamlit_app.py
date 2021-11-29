@@ -74,8 +74,8 @@ if st.button('Generate Transcripts'):
     #os.mkdir('transcriptsIITP_12/')
     generate_transcripts(roll_list,reader_1,reader_2,reader_3)
     
-    zipObj = ZipFile('storing_tables/transcripts.zip', 'w')
-    path='transcriptsIITP_12/'
+    zipObj = ZipFile('transcript_generator/storing_tables/transcripts.zip', 'w')
+    path='transcript_generator/transcriptsIITP_12/'
     
     for k in os.listdir(path):
         zipObj.write(path+k)
@@ -86,7 +86,7 @@ if st.button('Generate Transcripts'):
 #     st.write("Downloading......")
 
 if(flag_get==1):
-    with open('storing_tables/transcripts.zip', 'rb') as f:
+    with open('transcript_generator/storing_tables/transcripts.zip', 'rb') as f:
         st.download_button('Download Zip', f, file_name='transcripts.zip')
             
     
