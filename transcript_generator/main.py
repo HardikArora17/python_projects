@@ -215,7 +215,7 @@ def generate_transcripts(lor,reader_1,reader_2,reader_3):
                 bottom_mtech(pdf)
         
         
-        filepath="transcriptsIITP_12/"  
+        filepath="transcript_generator/transcriptsIITP_12/"  
         
         pdf.output(filepath+r_no+".pdf",'F')
            
