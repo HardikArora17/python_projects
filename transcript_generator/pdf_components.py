@@ -1,9 +1,9 @@
 from fpdf import FPDF
 
-path_to_logo=r'download.png'
-path_to_text=r'19-iitpatna.jpg'
-path_to_stamp=r"stamp.png"
-path_to_sign=r"sign.png"
+path_to_logo=r'transcript_generator/download.png'
+path_to_text=r'transcript_generator/19-iitpatna.jpg'
+path_to_stamp=r"transcript_generator/stamp.png"
+path_to_sign=r"transcript_generator/sign.png"
 
 class PDF_MINER(FPDF):
     
